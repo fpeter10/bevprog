@@ -32,7 +32,7 @@ const vector<string> months=
 
 enum class Month{
 	jan, feb, mar, apr, may, jun, jul, aug, sep, okt, nov, dec
-};    // minden tag mögött egy-egy szám van ezt használja
+};   
 
 Month operator++(Month& m)
 {
@@ -46,7 +46,7 @@ ostream& operator<<(ostream& os, Month m)  // saját típusra nem tudja hogy kel
 }
 
 class Date{ 
-private:      //class
+private:    
 	Year year;
 	Month month;
 	int day;
