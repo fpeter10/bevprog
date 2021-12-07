@@ -36,13 +36,13 @@ enum class Month{
 
 Month operator++(Month& m)
 {
-	m = (m == Month::dec) ? Month::jan : Month(int(m)+1);  // a ? egyszerűsített if ha igaz ami utána jön ha hamis a : mögött
+	m = (m == Month::dec) ? Month::jan : Month(int(m)+1); 
 	return m;
 }
 
-ostream& operator<<(ostream& os, Month m)  // saját típusra nem tudja hogy kell kiírni
+ostream& operator<<(ostream& os, Month m)  // saját típus kiíratás
 {
-	os << months[int(m)];  //az ostreamre rakom a months értékét
+	os << months[int(m)]; 
 }
 
 class Date{ 
